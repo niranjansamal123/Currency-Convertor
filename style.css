@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffe5e5; /* Light pastel pink background */
+}
+
+.container {
+  background-color: #ffffff; /* White background for the container */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff6f61; /* Coral color for the heading */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.amount p,
+.dropdown p {
+  margin-bottom: 5px;
+  color: #ff6f61; /* Coral color for the labels */
+}
+
+.amount input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #e0f7fa; /* Light pastel blue background for the input */
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown .from,
+.dropdown .to {
+  flex: 1;
+}
+
+.dropdown .from {
+  margin-right: 10px;
+}
+
+.dropdown .to {
+  margin-left: 10px;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: #ffecb3; /* Light pastel yellow background for select containers */
+}
+
+.select-container img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+select {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent; /* Make select background transparent */
+}
+
+.fa-arrow-right-arrow-left {
+  font-size: 24px;
+  color: #ff6f61; /* Coral color for the arrow icon */
+}
+
+.msg {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #ff6f61; /* Coral color for the message */
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffa726; /* Orange background for the button */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #fb8c00; /* Darker orange on hover */
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  .dropdown {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dropdown .from,
+  .dropdown .to {
+    margin: 0 0 10px 0;
+  }
+
+  .fa-arrow-right-arrow-left {
+    margin: 10px 0;
+  }
+}
